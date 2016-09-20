@@ -1,13 +1,36 @@
 $light-color: #fff;
+$bg-color: #f1c40f;
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #f1c40f;
+  background-color: $bg-color;
 
   header {
+    position: relative;
+    border: 1px solid transparent;
+
     h1 {
       color: $light-color;
       text-align: center;
+      font-weight: 300;
+      font-size: 2.6rem;
+      margin: 1rem auto;
+      background-color: $bg-color;
+      position: relative;
+      z-index: 2;
+      width: 5em;
+    }
+
+    &::before {
+      content: '';
+      border: 1px solid $light-color;
+      border-width: 0 0 1px 0;
+      position: absolute;
+      top: 2.3rem;
+      left: 0;
+      right: 0;
+      margin-top: 0;
+      z-index: 1;
     }
   }
 
