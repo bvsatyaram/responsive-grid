@@ -63,14 +63,20 @@ body {
         padding: 15px;
         border-radius: 4px;
 
+        img {
+          height: 120px;
+        }
+
         h2 {
           font-weight: 100;
           font-size: 1.2em;
+          height: 2em;
         }
 
         p {
           font-weight: 300;
           font-size: 1em;
+          height: 5em;
         }
       }
     }
